@@ -6,4 +6,4 @@ components
 3. cards different type of cards
 
 1.1 search (trie data strcuture) 
-1.2 cart , lgin sinup 
+1.2 cart , login signup 
