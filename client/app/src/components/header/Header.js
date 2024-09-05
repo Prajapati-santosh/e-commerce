@@ -4,6 +4,7 @@ import userIcon from './user.jpeg';
 import './header.scss'
 import { IoSearchOutline } from "react-icons/io5";
 import { PiShoppingCart } from "react-icons/pi";
+import SearchBar from './searchbar/SearchBar';
 
 
 function Header() {
@@ -12,10 +13,11 @@ function Header() {
         <img src={Logo} alt='logo-icon' className='logo' />
 
         <div className='mid-section'>
-            <div className='searchbar'>
+            {/* <div className='searchbar'>
                 <input type='text' placeholder='search...'/>
                 <IoSearchOutline/>
-            </div>
+            </div> */}
+            <SearchBar/>
 
             <ul>
                 <li>Home</li>

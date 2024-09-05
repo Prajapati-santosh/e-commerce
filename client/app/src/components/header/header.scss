@@ -11,6 +11,7 @@ nav{
     .logo{
         height: 100%;
         mix-blend-mode: darken;
+        cursor: pointer;
     }
 
     .mid-section{
@@ -18,26 +19,18 @@ nav{
         align-items: center;
         gap: 1rem;
 
-        .searchbar{
-            display: flex;
-            align-items: center;
-            background: white;
-            border-radius: 25px;
-            height: 65%;
-            padding: 0.5rem;
 
-            input{
-                border: none;
-                outline: none;
-                font-size: 15px;
-            }
-        }
 
         ul{
             display: flex;
             list-style: none;
             gap: 1em;
             font-size: 14px;
+
+
+            li{
+                cursor: pointer;
+            }
         }
     }
 
@@ -51,6 +44,7 @@ nav{
             width: 35px;
             // mix-blend-mode: darken;
             border-radius: 50%;
+            cursor: pointer;
 
         }
 
@@ -64,6 +58,7 @@ nav{
             background-color: white;
             border-radius: 50%;
             position: relative;
+            cursor: pointer;
 
 
             .notfication-dot{
