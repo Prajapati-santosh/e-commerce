@@ -1,0 +1,17 @@
+.search-container > .search-bar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 25px;
+    height: 65%;
+    width: 30%;
+    padding: 0.5rem;
+    border: 1px solid grey;
+
+}
+.search-bar input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
