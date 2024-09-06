@@ -1,4 +1,11 @@
-.search-container > .search-bar{
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ .search-bar{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -10,8 +17,21 @@
     border: 1px solid grey;
 
 }
+
 .search-bar input{
     width: 100%;
     border: none;
     outline: none;
 }
+.search-result-container{
+    width: 30%;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    .search-result{
+        display: flex;
+        justify-content: start;
+        padding: 8px;
+    }
+}
+

@@ -28,9 +28,11 @@ function SearchBar(){
             <input placeholder="Type to search " onChange={handleChnage} value={input}></input>
             <IoSearchOutline />
         </div>
-        {results && results.length>=1 ? (results.map((item)=>{
-          return ( <SearchResults key={item.id} productName={item.productName}/>)
-        })):""}
+        <div className="search-result-container">
+            {results && results.length>=1 ? (results.map((item)=>{
+            return ( <SearchResults key={item.id} productName={item.productName}/>)
+            })):""}
+        </div>
     </div>;
 }
 
