@@ -1,0 +1,8 @@
+.search-result{
+    display: flex;
+    justify-content: start;
+    padding: 8px;
+}
+.search-result:hover{
+    background-color: dimgrey;
+}
