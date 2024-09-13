@@ -1,0 +1,139 @@
+
+.footer-container {
+    height: 400px;
+    background-color: #5C5C56;
+    margin-top: auto;
+    padding: 20px 40px;
+    font-family: "Hind", sans-serif;
+    color: white;
+    font-weight: 100;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      height: 97%;
+
+      .section {
+        flex: 1;
+        min-width: 150px;
+
+        h4 {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+          text-align: start;
+          font-weight: 100;
+          font-family: "Inter", sans-serif;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            text-align: start;
+            font-family: "Hind", sans-serif;
+            cursor: pointer;
+          }
+        }
+
+        address, p {
+          font-size: 0.9em;
+          text-align: start;
+        }
+      }
+
+      .logo-subscribe {
+        .logo img {
+          width: 150px;
+        }
+
+        .subscribe {
+          margin-top: 20px;
+
+          h4 {
+            margin-bottom: 10px;
+          }
+
+          .subscribe-box {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            gap: 1rem;
+            input {
+              border: none;
+              padding: 5px;
+            //   border-radius: 3px;
+              outline: none;
+              flex: 1;
+              background-color: transparent;
+              border-bottom: 1px solid white;
+              color: white;
+              font-family: "Inter", sans-serif;
+              font-weight: 200;
+
+              &::placeholder{
+                color: white;
+                font-family: "Inter", sans-serif;
+                font-weight: 200;
+              }
+            }
+
+            button {
+              background-color: #fff;
+              color: #000;
+              border: none;
+              padding: 6px 12px;
+              margin-left: 5px;
+              border-radius: 3px;
+              cursor: pointer;
+              font-weight: bold;
+              width: 70%;
+              font-family: "Inter", sans-serif;
+            }
+          }
+        }
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 10px;
+
+        i {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          background-size: cover;
+          background-position: center;
+        }
+
+
+      }
+    }
+
+    .bottom {
+        margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px solid #bfbfbf;
+      font-size: 0.85em;
+
+      p {
+        margin: 0;
+      }
+
+      .footer-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+  }
