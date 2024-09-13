@@ -15,7 +15,7 @@ function App() {
 
       <Footer/>
 
-      <SearchBar/>
+      {/* <SearchBar/> */}
 
     </div>
   );

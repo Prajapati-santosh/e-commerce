@@ -29,8 +29,7 @@ function SearchBar(){
             <IoSearchOutline />
         </div>
         <div className="search-result-container">
-            {result0
-            .s && results.length>=1 ? (results.map((item)=>{
+            {results && results.length>=1 ? (results.map((item)=>{
             return ( <SearchResults key={item.id} productName={item.productName}/>)
             })):""}
         </div>
