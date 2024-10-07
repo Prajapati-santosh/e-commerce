@@ -1,0 +1,278 @@
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  font-family: "Inter" sans-serif;
+
+  .login-holder {
+    height: 85%;
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+    .top {
+      height: 25%;
+      position: relative;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      p {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 22px;
+        background-color: rgba($color: #252525, $alpha: 0.9);
+        color: white;
+        text-align: center;
+        font-size: 13px;
+        vertical-align: middle;
+      }
+    }
+
+    .bottom {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      h3 {
+        white-space: nowrap;
+        font-family: "Inria Sans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-style: normal;
+
+        span {
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+
+      .input-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .search-container {
+          width: 95%;
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+
+          .google-option {
+            height: 44px;
+            min-width: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 0.5px solid #d4d5d9;
+            cursor: pointer;
+
+            img {
+              height: 70%;
+              width: 70%;
+              object-fit: cover;
+            }
+          }
+
+          .email-input {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border: 1px solid #d4d5d9;
+            overflow: hidden;
+            transition: border 0.3s ease;
+            height: 44px;
+
+            hr {
+              height: 70%;
+            }
+
+            &:focus-within {
+              border: 1px solid #d4d5d9;
+            }
+
+            input {
+              flex: 1;
+              padding: 15px;
+              font-size: 15px;
+              border: none;
+              outline: none;
+              color: #333;
+              transition: background-color 0.3s ease;
+
+              &:focus {
+                background-color: white;
+              }
+            }
+
+            select {
+              padding: 5px;
+              min-width: 120px;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              font-size: 15px;
+              color: #acacac;
+              transition: background-color 0.3s ease;
+
+              &:focus {
+                background-color: white;
+              }
+
+              &:hover {
+                background-color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .otp-input-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        width: 95%;
+        margin: 0 auto;
+
+        .otp-input {
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+          text-align: center;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+      }
+
+      .button-continue {
+        width: 95%;
+        background-color: #ff6f61;
+        padding-block: 0.8rem;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &.verify {
+          background-color: #28a745;
+        }
+
+        &.filled {
+          background-color: #f0f0f0;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .help span {
+        color: #007bff;
+        cursor: pointer;
+      }
+
+      .pricacy-checkbox {
+        display: flex;
+        align-items: center;
+
+        gap: 0.5rem;
+        font-size: 13px;
+        margin: 0 auto;
+        width: 95%;
+
+        input {
+          width: 15px;
+          height: 15px;
+          border-radius: 2px;
+          margin-top: 4px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          position: relative;
+          appearance: none;
+          border: 1px solid #d4d5d9;
+          background-color: white;
+
+          &:checked {
+            background-color: #ff6f61;
+            border-color: #ff6f61;
+
+            &::after {
+              content: '✔';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 11px;
+              color: white;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+
+          &:hover {
+            border-color: #ff6f61;
+          }
+        }
+
+        p {
+          color: #333;
+
+          span {
+            color: #ff6f61;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+
+      button{
+        width: 95%;
+        background-color: #ff6f61;
+        padding-block: 0.8rem;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+
+      .help{
+        font-size: 13px;
+        margin: 0 auto;
+        width: 95%;
+        color: #333;
+
+
+        span {
+          color: #ff6f61;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
