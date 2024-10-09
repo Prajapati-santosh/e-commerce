@@ -5,6 +5,7 @@ import './header.scss'
 import { IoSearchOutline } from "react-icons/io5";
 import { PiShoppingCart } from "react-icons/pi";
 import SearchBar from './searchbar/SearchBar';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -27,11 +28,14 @@ function Header() {
         </div>
 
         <div className='user'>
-            <img src={userIcon} alt='usericon'/>
-            <div className='carticon'>
-                <PiShoppingCart size={22}/>
-                <div className='notfication-dot'/>
-            </div>
+                <Link to='/login'>
+                <img src={userIcon} alt='usericon'/>
+                 </Link>
+                <div className='carticon'>
+                    <PiShoppingCart size={22}/>
+                    <div className='notfication-dot'/>
+                </div>
+
         </div>
 
 
