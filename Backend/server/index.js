@@ -36,7 +36,7 @@ app.get("/protected/mysecret",(req,res)=>{
 app.get("/",(req,res)=>{
     console.log("hello");
 })
-
+// register Route
 app.post('/register', async(req, res) => {
     const saltRounds = 1;
     const salt = bcrypt.genSaltSync(saltRounds);
