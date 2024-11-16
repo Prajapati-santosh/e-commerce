@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import bcrypt from 'bcrypt';
 import bodyParser from "body-parser";
 import conDB  from "./db.js"
-import UserModel from "./UserModel.js";
+import userModel from "./UserModel.js";
 import cookieParser from "cookie-parser";
 
 
