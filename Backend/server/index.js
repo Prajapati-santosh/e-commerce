@@ -34,7 +34,7 @@ app.get("/protected/mysecret",(req,res)=>{
   })
 })
 app.get("/",(req,res)=>{
-    console.log("hello");
+    res.send("Hello");
 })
 // register Route
 app.post('/register', async(req, res) => {
