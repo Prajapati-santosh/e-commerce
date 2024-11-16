@@ -5,6 +5,13 @@ import bodyParser from "body-parser";
 import conDB  from "./db.js"
 import userModel from "./UserModel.js";
 import cookieParser from "cookie-parser";
+import cors from "cors";
+
+let corsOption={
+  origin:"*"
+}
+
+app.use(cors(corsOption));
 
 
 const validateToken = (req, res, next) => {
